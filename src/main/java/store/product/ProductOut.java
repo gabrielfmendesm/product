@@ -7,6 +7,6 @@ import lombok.experimental.Accessors;
 public record ProductOut(
     String id,
     String name,
-    double price,
+    Double price,
     String unit
 ) {}

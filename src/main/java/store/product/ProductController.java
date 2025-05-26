@@ -19,11 +19,11 @@ public interface ProductController {
 
     @GetMapping("/product/{id}")
     ResponseEntity<ProductOut> findById(
-        @PathVariable("id") String id
+        @PathVariable String id
     );
 
     @DeleteMapping("/product/{id}")
-    ResponseEntity<Void> delete(
-        @PathVariable("id") String id
+    ResponseEntity<Void> deleteById(
+        @PathVariable String id
     );
 }

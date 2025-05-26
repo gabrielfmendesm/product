@@ -6,6 +6,6 @@ import lombok.experimental.Accessors;
 @Builder @Accessors(fluent = true)
 public record ProductIn(
     String name,
-    double price,
+    Double price,
     String unit
 ) {}
